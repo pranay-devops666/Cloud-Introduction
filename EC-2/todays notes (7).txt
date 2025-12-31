@@ -1,0 +1,8 @@
+todays notes link : https://cloudcomputingbymustafa.hashnode.dev/mastering-ec2-instance-modifications-a-guide-to-updating-name-tags-instance-type-security-groups-and-ebs-volume
+
+
+Todays commands:
+
+
+1. sudo yum install httpd -y
+2. sudo systemctl start httpd
