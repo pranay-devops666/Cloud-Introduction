@@ -1,1 +1,12 @@
 Ec-2 Part-1
+
+
+first sign-in to the console into aws dashboard
+
+there are 7 steps to launch an instance
+
+select EC2 service--------->select instances--->launch instance-->give instance name------>select type of OS like amazon, ubuntu, windows etc as per requirement
+(select free tier )-------> select instance type here (select free tier )---------> create key pair----->create security group------>here configuration storage is free
+upto 30GB-----> launch instance
+
+EC2: EVERY MONTH ------> 750 HRS FREE
