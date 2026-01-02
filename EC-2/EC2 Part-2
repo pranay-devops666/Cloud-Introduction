@@ -1,1 +1,61 @@
 How to connect Instance With Putty and Terminal
+
+
+first launch instanec------> in that instance create one key pair
+
+based on that key pair we can able to connect the instance with putty and termina
+
+every server/instance will have Public & Private IPs
+
+Public IP------>used to access the application over the internet
+
+Private IP------> used to access the application within the server
+
+How to connect created instance with Putty/Terminal is steps under below
+
+key pair has 2 types
+1. .pem------>private enhancement
+2. .ppk------->putty private key
+
+in real time we mostly used .pem format only
+
+putty will not support .pem file
+putty will support only .ppk only to connect with putty
+if we take .pem means we need to convert .pem to .ppk using putty gen 
+if we take .ppk means we need to convert .ppk to .pem using putty gen 
+both ways will work
+
+PUTTYGEN used to convert the .pem file to .ppk file
+
+
+PEM--------> we can able to connect with this .pem ---> mobaxtrem, command prompt, s code, terminal, git bash and jenkins
+PPK--------> we can able to connect with this .ppk ---> only putty
+
+
+select created instance Public IP----->open puttygen------->click Load-------> select all files to view created .pem file in local PC------> selct ---> ok--> save 
+private key with our wish name----> over
+
+
+now open putty-------->  copy and paste instance public IP on host name place in putty------>select SSH----> expand SSH-------> select AUTH ----> expand AUTH----->
+select credentials-------> select  first option browse-----> select file -------> accept ok-----> ec2-user------> logged in succesfully
+
+Authenticating with public key "imported-openssh-key"
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+[ec2-user@ip-172-31-30-184 ~]$
+
+How to connect created instance with Terminal is steps under below
+
+first connect instance in aws ------->which means launch instance normally----->select instance -----> connect select option here 
+
+open first terminal----->cd Downloads/--------> select created instance ------->select connect------> in connect select option here as -------> select SSH client
+------>copy and paste 3rd on terminal--------> again copy and paste example command on terminal---------> yes------> over
+
